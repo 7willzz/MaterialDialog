@@ -1,28 +1,28 @@
 # Material Dialog v1.2.2
 
 <!-- github-global:langs:start -->
-## Translations
+## 翻譯
 [English](./translations/en/README.md)
 <!-- github-global:langs:end -->
 
-This is an Android library, I call it MaterialDialog. It's very easy to use. Just `new` it & call `show()` method, then the beautiful AlertDialog will show automatedly. It is artistic, conforms to Google Material Design. I hope that you will like it, and enjoys it. ^ ^
+這是一個 Android 函式庫，我稱它為 MaterialDialog。它非常容易使用，只要 `new` 它並呼叫 `show()` 方法，美觀的 AlertDialog 就會自動顯示。它富有美感，符合 Google Material Design。希望你會喜歡它，並享受它。^ ^
 
-## Screenshots
+## 截圖
 
 <img src="/screenshots/s1.png" alt="screenshot" title="screenshot" width="270" height="486" /><img src="/screenshots/s2.png" alt="screenshot" title="screenshot" width="270" height="486" />
 <img src="/screenshots/s3.png" alt="screenshot" title="screenshot" width="270" height="486" /><img src="/screenshots/s4.png" alt="screenshot" title="screenshot" width="270" height="486" />
 
-You can also change the background with a image what you like. it's very easy!:
+你也可以用自己喜歡的圖片來更換背景，非常簡單！：
 
 <img src="/screenshots/s5.png" alt="screenshot" title="screenshot" width="270" height="486" /><img src="/screenshots/s6.png" alt="screenshot" title="screenshot" width="270" height="486" />
 
-And with the v1.0.6, you can use the `setContentView()` to change the `message view` to your custom view.
+從 v1.0.6 開始，你可以使用 `setContentView()` 將 `message view` 換成你的自訂 view。
 
-Example:
+範例：
 
 <img src="/screenshots/s7.png" alt="setContentView" title="setContentView" width="270" height="486" /><img src="/screenshots/s8.jpg" alt="setContentView" title="setContentView" width="270" height="486" />
-## Usage
-### Step 1
+## 使用方式
+### 步驟 1
 ####Gradle
 
 ```groovy
@@ -31,17 +31,17 @@ dependencies {
 }
 ```
 
-If it doesn't work, please send me a email, drakeet.me@gmail.com
+如果無法運作，請寄信給我：drakeet.me@gmail.com
 
-####Or
+####或者
 
-Import the library, then add it to your `/settings.gradle` and `/app/build.gradle`, if you don't know how to do it, you can read my blog for help.
+匯入此函式庫，然後將它加入你的 `/settings.gradle` 和 `/app/build.gradle`，如果你不知道怎麼做，可以閱讀我的部落格尋求協助。
 
-[Introduction to Android Studio and how to import jar packages and third-party open source libraries](http://drakeet.me/android-studio)
+[Android Studio 簡介及導入 jar 包和第三方開源庫方法](http://drakeet.me/android-studio)
 
-### Step 2
+### 步驟 2
 
-It's very easy, just like this:
+非常簡單，就像這樣：
 
 ```java
 MaterialDialog mMaterialDialog = new MaterialDialog(this)
@@ -65,15 +65,14 @@ MaterialDialog mMaterialDialog = new MaterialDialog(this)
 mMaterialDialog.show();
 
 // You can change the message anytime. before show
-mMaterialDialog.setTitle("Notice");
+mMaterialDialog.setTitle("提示");
 mMaterialDialog.show();
 // You can change the message anytime. after show
-mMaterialDialog.setMessage("Hello, world~");
+mMaterialDialog.setMessage("你好，世界~");
 ```
-With the first initial and `mMaterialDialog.show()`, it will show automatedly.
+在第一次初始化並呼叫 `mMaterialDialog.show()` 之後，它就會自動顯示。
 
-In addition, you can call `setView (View v) ` & `setContentView()` to set a View what you like or
-custom after the instantiation. This replaces the title and message.
+此外，你可以在實例化之後呼叫 `setView (View v) ` 與 `setContentView()` 來設定你喜歡的 View 或自訂 View。這會取代標題與訊息。
 ```java
 EditText contentView = new EditText(this);
 MaterialDialog mMaterialDialog = new MaterialDialog(this).setView(contentView);
@@ -81,39 +80,39 @@ MaterialDialog mMaterialDialog = new MaterialDialog(this).setView(contentView);
 mMaterialDialog.show();
 ```
 
-And, you can call `setBackgroundResource(int resId)` or `setBackground(Drawable drawable)` to change the background:
+而且，你可以呼叫 `setBackgroundResource(int resId)` 或 `setBackground(Drawable drawable)` 來更換背景：
 
 ```java
 mMaterialDialog.setBackgroundResource(R.drawable.background);
 ```
 
 ## 1.2.1
-Now, It has been able to run perfectly on L.
-Fix the button style on L.
-Fix the problem, so that it can correctly use `AutoCompleteTextView` & `EditText`.
+現在，它已經可以在 L 上完美執行。
+修正 L 上的按鈕樣式。
+修正了一個問題，讓它能正確使用 `AutoCompleteTextView` 與 `EditText`。
 
 ## 1.1.0
-fix the keyboard/input bug when more show. 
+修復多次顯示時的鍵盤／輸入 bug。
 
 ## 1.0.9
-If title is null, no show it, but I think it is ugly without title...;
-Add set Button's text by string resId, e.g. `setPositiveButton(android.R.string.yes, new View.OnClickListener() `
+如果標題為 null，就不顯示它，但我覺得沒有標題有點醜……；
+新增透過字串資源 ID 設定按鈕文字，例如 `setPositiveButton(android.R.string.yes, new View.OnClickListener() `
 
 ## 1.0.8
-Add every method return `this`
+新增每個方法都回傳 `this`
 
 ## 1.0.7
-Fix the BUG of `Can not show soft keyboard automatically when focus is on an EditText.`
+修復 `當焦點在 EditText 上時無法自動顯示軟鍵盤` 的 BUG。
 
-Add `setCanceledOnTouchOutside()` // You should set it before `show()`, otherwise, it can't take effect.
+新增 `setCanceledOnTouchOutside()` // 你應該在 `show()` 之前設定它，否則它不會生效。
 
-Add `setContentView()`
+新增 `setContentView()`
 
-Add Button press style;
+新增按鈕按下樣式；
 
 ...
 
-I recently was too busy, if you have any Suggestions for the library, I encourage you to read the source code, and try to achieve your requirements, and then I'll merger it. We create good world together.
+我最近實在太忙了，如果你對這個函式庫有任何建議，我鼓勵你閱讀原始碼，並嘗試實現你的需求，然後我會將它合併進來。讓我們一起創造美好的世界。
 
 ## BUG
 
@@ -121,13 +120,13 @@ I recently was too busy, if you have any Suggestions for the library, I encourag
 
 [demo apk](/demo-release.apk)
 
-## About me
+## 關於我
 
-A student in mainland China. (^ ^ Thanks daimajia)
+一位來自中國大陸的學生。(^ ^ 感謝 daimajia)
 
-My blog: http://drakeet.me
+我的部落格：http://drakeet.me
 
-More about me: http://drakeet.me/about
+更多關於我的資訊：http://drakeet.me/about
 
 License
 ============
