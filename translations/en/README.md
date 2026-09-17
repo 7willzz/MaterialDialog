@@ -1,11 +1,5 @@
 # Material Dialog v1.2.2
 
-<!-- github-global:langs:start -->
-## Translations
-[English](./translations/en/README.md)
-<!-- github-global:langs:end -->
-
-
 This is an Android library, I call it MaterialDialog. It's very easy to use. Just `new` it & call `show()` method, then the beautiful AlertDialog will show automatedly. It is artistic, conforms to Google Material Design. I hope that you will like it, and enjoys it. ^ ^
 
 ## Screenshots
@@ -38,7 +32,7 @@ If it doesn't work, please send me a email, drakeet.me@gmail.com
 
 Import the library, then add it to your `/settings.gradle` and `/app/build.gradle`, if you don't know how to do it, you can read my blog for help.
 
-[Android Studio 简介及导入 jar 包和第三方开源库方法](http://drakeet.me/android-studio)
+[Introduction to Android Studio and How to Import JAR Packages and Third-Party Open Source Libraries](http://drakeet.me/android-studio)
 
 ### Step 2
 
@@ -146,4 +140,3 @@ License
 	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 	See the License for the specific language governing permissions and
 	limitations under the License.
-
