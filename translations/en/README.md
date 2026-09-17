@@ -32,7 +32,7 @@ If it doesn't work, please send me a email, drakeet.me@gmail.com
 
 Import the library, then add it to your `/settings.gradle` and `/app/build.gradle`, if you don't know how to do it, you can read my blog for help.
 
-[Android Studio Introduction and How to Import Jar Packages and Third-party Open Source Libraries](http://drakeet.me/android-studio)
+[Introduction to Android Studio and How to Import JAR Packages and Third-Party Open Source Libraries](http://drakeet.me/android-studio)
 
 ### Step 2
 
